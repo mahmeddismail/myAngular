@@ -8,12 +8,12 @@ import { Renderer2 } from '@angular/core';
 })
 export class PortfolioComponent {
   myImages: string[] = [
-    "../../assets/images/poert1.png",
-    "../../assets/images/port2.png",
-    "../../assets/images/port3.png",
-    "../../assets/images/poert1.png",
-    "../../assets/images/port2.png",
-    "../../assets/images/port3.png",
+    "assets/images/poert1.png",
+    "assets/images/port2.png",
+    "assets/images/port3.png",
+    "assets/images/poert1.png",
+    "assets/images/port2.png",
+    "assets/images/port3.png",
   ]
 
   showLightBox: boolean = false;
