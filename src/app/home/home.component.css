@@ -1,0 +1,26 @@
+
+.img-content {
+    position: relative;
+}
+
+.img-content::before {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 0.3em;
+    bottom: 29%;
+    left: 44%; 
+    transform: translateX(-50%); 
+    background-color: #fff !important;
+}   
+
+.img-content::after {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 0.3em;
+    bottom: 29%;
+    right: 37%; 
+    transform: translateX(-50%); 
+    background-color: #fff !important;
+}   

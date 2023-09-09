@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row justify-content-center my-5">
+
+        <div class=" text-black text-center">
+            <h1 class="fw-bold display-6">PORTFOLIO COMPONENT</h1>
+        </div>
+
+        <div class="my-content text-black text-center">
+            <i class="fa-solid fa-star"></i>
+        </div>
+    </div>
+</div>
+
+<div class="container py-3">
+    <div class="row gy-4">
+        <div class="col-md-4" *ngFor="let images of myImages;let i=index">
+            <div class="myCard" (click)="openPhoto(i)">
+                <img [src]="images" class="w-100">
+                <div class="layerIcon">
+                    <i class="fa-solid fa-plus text-white"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container py-3">
+            <!-- ... existing code ... -->
+            <div class="myBoxContainer" [class]="showLightBox==true?'d-flex':'d-none'" (click)="closePhoto()">
+                <div class="box">
+                    <img [src]="selectedImage" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,63 @@
+.my-content {
+    position: relative;
+}
+
+.my-content::before {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 0.3em;
+    bottom: 29%;
+    left: 44%;
+    transform: translateX(-50%);
+    background-color: black !important;
+}
+
+.my-content::after {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 0.3em;
+    bottom: 29%;
+    right: 37%;
+    transform: translateX(-50%);
+    background-color: black !important;
+}
+
+.myCard {
+    position: relative;
+}
+
+.layerIcon {
+    position: absolute;
+    inset: 0;
+    background-color:#1abc9c !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.myCard:hover .layerIcon{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.layerIcon i{
+    font-size: 100px;
+}
+.myBoxContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(63, 59, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
