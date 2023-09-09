@@ -15,7 +15,7 @@
     <div class="row gy-4">
         <div class="col-md-4" *ngFor="let images of myImages;let i=index">
             <div class="myCard" (click)="openPhoto(i)">
-                <img [src]="images" class="w-100">
+                <img [src]="images" class="w-100" alt="myProducts">
                 <div class="layerIcon">
                     <i class="fa-solid fa-plus text-white"></i>
                 </div>
